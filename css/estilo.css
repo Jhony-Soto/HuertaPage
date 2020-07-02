@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* SECCCION HEADER */
+header{
+    background-image: url('../img/header.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+}
+
+.nav{
+    width:100%;
+    height:100px;
+    box-shadow:0px 0.5px 1px 0px #fff;
+    justify-content:space-around;
+}
+.logo{
+    width:10%;
+    height:100%;
+}
+
+.nav ul{
+
+    display: flex;
+    font-size:20px; 
+    
+}
+
+.nav ul li{
+    list-style: none;
+    line-height: 100px;
+    margin-right:15%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    
+}
+.nav ul li a:hover{
+    border-bottom:3px solid #fff;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+header .titulo{
+    display:inline-block;
+    margin-top:10%;
+    float:right;
+    text-align: right;
+    animation: crecer 3s;
+    animation-delay: 4s;
+}
+header .titulo h1{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#ffff;
+    padding:2%;  
+}
+header .titulo p{
+    color: #fff;
+    font-size:25px;
+    padding:2%;
+    font-family: monospace;
+}
+
+@keyframes crecer{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+/*   SECCION NUMERO 2 */
+.section2{
+    width: 100%;
+    height:100vh;
+    padding-top:15%;
+    text-align: right;
+}
+.section2 .huerta{
+    width:450px;
+    height:250px;
+    margin-left: -150%;
+}
+.section2 .huerta img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+.section2 .info-huerta h2{
+    font-size: 40px;
+    color: #47c436;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.section2 .info-huerta p{
+    font-size:20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.salida{
+    animation: salida 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes salida{
+    0%{
+        margin-left: -150%;
+    }
+    100%{
+        margin-left:0;
+    }
+}
+
+/* SECTION VERDURAS */
+
+
